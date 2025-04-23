@@ -32,9 +32,13 @@ header {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr ;
     place-content: space-between;
-    border: 2vh solid rgba(0, 0, 0, 0.575);
-    border-image: url(/assets/img/image-border.webp) 200 round;
+    border: 1vh solid rgba(0, 0, 0, 0.575);
     border-radius: 2vh;
+    border-bottom: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.892);
+    padding: 2vh 2vh;
+    margin: 0;
+
 }
 
 header .logo {
@@ -169,11 +173,25 @@ main {
     background-color: rgba(27, 27, 27, 0.485);
     grid-area: 3/2/4/4;
     color: rgb(255, 255, 255);
-    padding: 2vh 2vh;
+    padding: 1vh 1vh;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 2px solid rgba(0, 0, 0, 0.575);
-    border-image: url(/assets/img/image-border.webp) 200 round;
+    border: 1px solid rgba(0, 0, 0, 0.575);
+    border-radius: 2vh;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.892);
+    margin: 0;
+    overflow: auto;
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 footer {
     background-color: rgba(27, 27, 27, 0.485);
